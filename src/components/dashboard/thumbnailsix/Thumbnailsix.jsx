@@ -19,7 +19,7 @@ const Thumbnailsix = () => {
     const fetchData = async () => {
         try {
             // const response = await axios.get('http://localhost:9000/api/six/alldata',
-            const response = await axios.get('http://localhost:9000/api/six/alldata',
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/six/alldata',
                 { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
             )
             setData(response.data.data)
