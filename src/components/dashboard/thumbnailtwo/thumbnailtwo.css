@@ -1,0 +1,104 @@
+/* Container holding the table */
+.second-container {
+    padding: 20px;
+    margin-left: 150px; /* To accommodate fixed sidebar */
+    margin-top: 20px;   /* To accommodate fixed header */
+    overflow-x: auto;
+}
+
+/* Table styling */
+.second-container-one {
+    width: 100%;
+    height: 50%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    /* overflow: hidden; */
+}
+
+/* Table Header */
+.second-container-one thead {
+    /* background-color: b; */
+        background-color: aliceblue;
+    color: #3e3e3e;
+    /* color: white; */
+    text-align: left;
+}
+
+/* Table Header Cells */
+.second-container-one th {
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+/* Table Rows */
+.second-container-one tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Cells */
+.second-container-one td {
+    padding: 12px 16px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* Image inside table */
+.second-container-one img {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Input for URL editing */
+.second-container-one input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+.second-container-one button {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    /* background-color: #252323; */
+        background-color: #288CD5;
+
+    color: white;
+    transition: background-color 0.2s ease;
+}
+/* 
+.second-container-one button:hover {
+    background-color: #3e3e3e;
+} */
+
+/* Responsive: allow horizontal scroll on small screens */
+@media screen and (max-width: 768px) {
+    .second-container {
+        margin-left: 0;
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    .second-container-one th,
+    .second-container-one td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .second-container-one input[type="text"] {
+        font-size: 13px;
+    }
+
+    .second-container-one button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
