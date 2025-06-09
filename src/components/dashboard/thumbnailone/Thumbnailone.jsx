@@ -65,7 +65,7 @@ const Thumbnailone = () => {
         url
       }
 
-      const response = await axios.put(`http://localhost:9000/api/one/editdata/${id}`,
+      // const response = await axios.put(`http://localhost:9000/api/one/editdata/${id}`,
       const response = await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/one/editdata/${id}`,
         updatedData,
         {
