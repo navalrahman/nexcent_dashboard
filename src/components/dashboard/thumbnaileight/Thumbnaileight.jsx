@@ -53,7 +53,7 @@ const Thumbnaileight = () => {
                 content
             }
             // const response = await axios.put(`http://localhost:9000/api/eight/edits/${id}`,
-            const response = await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/eight/edits/${id}`)
+            const response = await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/eight/edits/${id}`
                 updatedItem,
                 {
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
