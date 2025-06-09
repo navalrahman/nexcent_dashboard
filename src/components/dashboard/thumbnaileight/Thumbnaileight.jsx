@@ -24,7 +24,7 @@ const Thumbnaileight = () => {
             const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/eight/images',
                 { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
             )
-            console.log(response.data)
+            // console.log(response.data)
 
             setInfo(response.data.data)
         } catch (error) {
