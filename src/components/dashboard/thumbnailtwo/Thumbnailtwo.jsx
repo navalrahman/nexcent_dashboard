@@ -15,7 +15,8 @@ const Thumbnailtwo = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:9000/api/two/alllogos', {
+      // const response = await axios.get('http://localhost:9000/api/two/alllogos', {
+        const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/two/alllogos', {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       setData(response.data.data);
@@ -36,7 +37,8 @@ const Thumbnailtwo = () => {
 
   const handleSaveEdit = async () => {
     try {
-      await axios.put(`http://localhost:9000/api/two/logos/${id}`, 
+      // await axios.put(`http://localhost:9000/api/two/logos/${id}`, 
+      await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/two/logos/${id}`, 
         { url },
         {
           headers: {
