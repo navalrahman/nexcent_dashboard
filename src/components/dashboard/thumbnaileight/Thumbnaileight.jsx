@@ -19,7 +19,8 @@ const Thumbnaileight = () => {
 
     const fetchinfo = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/eight/images',
+            // const response = await axios.get('http://localhost:9000/api/eight/images',
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/eight/images',
                 { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
             )
             console.log(response.data)
@@ -52,7 +53,8 @@ const Thumbnaileight = () => {
                 url,
                 content
             }
-            const response = await axios.put(`http://localhost:9000/api/eight/edits/${id}`,
+            // const response = await axios.put(`http://localhost:9000/api/eight/edits/${id}`,
+            const response = await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/eight/edits/${id}`)
                 updatedItem,
                 {
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
