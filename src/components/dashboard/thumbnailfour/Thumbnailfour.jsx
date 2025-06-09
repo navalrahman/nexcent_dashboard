@@ -16,7 +16,8 @@ const Thumbnailfour = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/four/alldata',
+            // const response = await axios.get('http://localhost:9000/api/four/alldata',
+                                             const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/four/alldata',
                 { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
             );
             setData(response.data.data);
@@ -47,7 +48,8 @@ const Thumbnailfour = () => {
                 url
             };
 
-            const response = await axios.put(`http://localhost:9000/api/four/editdata/${id}`,
+            // const response = await axios.put(`http://localhost:9000/api/four/editdata/${id}`,
+                                             const response = await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/four/editdata/${id}`,
                 updatedItem,
                 {
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
