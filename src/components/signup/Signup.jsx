@@ -15,8 +15,8 @@ const Signup = () => {
     e.preventDefault()
     console.log('datassss', data);
     try {
-      const response = await axios.post('http://localhost:9000/api/user/signup', data)
-      // const response = await axios.post('https://nexcent-backend-4vbo.onrender.com/user/signup', data)
+      // const response = await axios.post('http://localhost:9000/api/user/signup', data)
+      const response = await axios.post('https://nexcent-backend-4vbo.onrender.com/user/signup', data)
       // const response = await axios.post('http://localhost:9000/api/user/signup', data)
       // const response = await axios.post('https://nexcent-backend-4vbo.onrender.com/api/user/signup', data)
       console.log(response);
