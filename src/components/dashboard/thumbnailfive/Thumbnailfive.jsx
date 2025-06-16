@@ -17,7 +17,8 @@ const Thumbnailfive = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:9000/api/five/alldata',
+      // const response = await axios.get('http://localhost:9000/api/five/alldata',
+                                       const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/five/alldata',
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         }
@@ -46,7 +47,8 @@ const Thumbnailfive = () => {
     const updatedData = { name, count, url };
 
     try {
-      await axios.put(`http://localhost:9000/api/five/update/${id}`,
+      // await axios.put(`http://localhost:9000/api/five/update/${id}`,
+                        await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/five/update/${id}`,
         updatedData,
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },

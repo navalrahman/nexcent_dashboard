@@ -26,7 +26,8 @@ const Thumbnailone = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:9000/api/one/alldata', {
+      // const response = await axios.get('http://localhost:9000/api/one/alldata', {
+      const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/one/alldata',{
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       // console.log('fetchdata', response);
@@ -64,7 +65,8 @@ const Thumbnailone = () => {
         url
       }
 
-      const response = await axios.put(`http://localhost:9000/api/one/editdata/${id}`,
+      // const response = await axios.put(`http://localhost:9000/api/one/editdata/${id}`,
+      const response = await axios.put(`https://nexcent-backend-4vbo.onrender.com/api/one/editdata/${id}`,
         updatedData,
         {
           headers: {
