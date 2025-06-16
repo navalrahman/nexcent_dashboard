@@ -11,6 +11,7 @@ import Thumbnailseven from './components/dashboard/thumbnailseven/Thumbnailseven
 import Thumbnaileight from './components/dashboard/thumbnaileight/Thumbnaileight'
 import Login from './components/login/Login'
 import Signup from './components/signup/Signup'
+import Overview from './components/dashboard/overview/Overview'
 
 
 
@@ -31,7 +32,8 @@ const Router = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/' element={<Dashboard />} >
-          <Route index element={<Thumbnailone />} />
+          <Route index element={<Overview />} />
+          <Route path='one' element={<Thumbnailone/>}/>
           <Route path='second' element={<Thumbnailtwo />} />
           <Route path='third' element={<Thumbnailthree />} />
           <Route path='fourth' element={<Thumbnailfour />} />

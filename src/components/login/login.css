@@ -1,9 +1,33 @@
-.login-container {
+/* *{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} */
+.main-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width:  99.8%;
+    /* border: 1px solid red; */
+    background-color: #f4f4f4;
+}
+
+.image-container{
+    width: 50%;
+    background-image: url("./images.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.login-container{
+    width: 50%;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 99vh;
-    background-color: #f4f4f4; /* Optional background */
 }
 
 .login-container-one {
@@ -11,7 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 50%;
     min-width: 300px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -53,9 +77,8 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #252323;
-}
+} 
 
-/* Submit Button */
 input[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -72,7 +95,6 @@ input[type="submit"]:hover {
     background-color: #3c3c3c;
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
     .login-container-one {
         width: 80%;

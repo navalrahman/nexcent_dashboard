@@ -1,0 +1,210 @@
+.dashboard-overview {
+  display: flex;
+  /* flex-direction: ; */
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.dashboard-overview-one {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+
+.card {
+  background-color: #d3cece;
+  padding: 20px;
+  flex: 1 1 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.card-info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.card-info p {
+  margin: 5px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.dashboard-overview-two {
+  /* background-color: aqua; */
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.dashboard-overview-two-container-one {
+  background-color: #d3cece;
+  padding: 20px;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: -10px; */
+}
+
+.dashboard-overview-three {
+  background-color: #d3cece;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.dashboard-table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.dashboard-table thead {
+  background-color: black;
+  color: white;
+  font-size: large;
+  padding: 10px;
+  /* border: 1px solid black; */
+  /* display: flex; */
+  /* gap: 25px; */
+}
+
+.dashboard-table tbody {
+  text-align: center;
+}
+
+.dashboard-table td {
+  border-bottom: 1px solid black;
+
+}
+
+.dashboard-table-hover:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.dashboard-overview-four {
+  /* background-color: #d3cece; */
+  /* padding: 20px; */
+  width: 100%;
+  /* border-radius: 10px; */
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 20px;
+}
+
+.dashboard-overview-four-chartone {
+  background-color: #d3cece;
+  border-radius: 10px;
+  width: 33%;
+}
+
+.dashboard-overview-four-chartone h3{
+  text-align: center;
+}
+
+
+.dashboard-overview-four-charttwo {
+  background-color: #d3cece;
+  width: 33%;
+  border-radius: 10px;
+
+}
+
+.dashboard-overview-four-charttwo h3{
+  text-align: center;
+}
+.indication {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.indicator-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.indicator-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+
+.indicator-label {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+.indications {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 10px; */
+}
+
+.indicators-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.indicators-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  /* gap: 10px; */
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: white;
+}
+
+
+.indicators-label {
+  /* display: flex; */
+  /* gap: 8px; */
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
