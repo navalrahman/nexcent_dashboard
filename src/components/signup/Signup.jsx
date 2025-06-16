@@ -8,6 +8,7 @@ const Signup = () => {
     email: '',
     password: ''
   })
+  
 
   const navigate = useNavigate()
 
