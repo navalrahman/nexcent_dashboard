@@ -18,6 +18,7 @@ const Login = () => {
     console.log(data);
     try {
 {/*       const response = await axios.post('http://localhost:9000/api/user/login', data) */}
+      
        const response = await axios.post('https://nexcent-backend-4vbo.onrender.com/api/user/login', data)
       console.log(response);
       alert(response.data.status)
