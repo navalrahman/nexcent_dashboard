@@ -8,6 +8,7 @@ const Signup = () => {
     email: '',
     password: ''
   })
+  
 
   const navigate = useNavigate()
 
@@ -89,3 +90,5 @@ const Signup = () => {
 }
 
 export default Signup
+
+
