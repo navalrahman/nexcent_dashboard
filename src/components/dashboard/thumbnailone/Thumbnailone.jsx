@@ -13,7 +13,7 @@ const Thumbnailone = () => {
   const [data, setData] = useState([]);
 
   const [id, setId] = useState('')
-  const [index, setIndex] = useState('')
+  // const [index, setIndex] = useState('')
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
   const [para, setPara] = useState('');

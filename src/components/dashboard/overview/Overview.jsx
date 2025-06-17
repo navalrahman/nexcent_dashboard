@@ -1,14 +1,8 @@
 import React from 'react'
 import './Overview.css'
 import { useSortBy, useTable } from 'react-table';
-import { SortOrder } from 'react-data-table-component';
+// import { SortOrder } from 'react-data-table-component';
 // import 'react-table/react-table.css';
-
-import {
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
 
 import {
   PieChart,

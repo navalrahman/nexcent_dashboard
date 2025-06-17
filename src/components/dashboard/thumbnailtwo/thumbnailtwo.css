@@ -1,8 +1,10 @@
 /* Container holding the table */
 .second-container {
     padding: 20px;
-    margin-left: 150px; /* To accommodate fixed sidebar */
-    margin-top: 20px;   /* To accommodate fixed header */
+    margin-left: 150px;
+    /* To accommodate fixed sidebar */
+    margin-top: 20px;
+    /* To accommodate fixed header */
     overflow-x: auto;
 }
 
@@ -20,8 +22,8 @@
 /* Table Header */
 .second-container-one thead {
     /* background-color: b; */
-        background-color: aliceblue;
-    color: #3e3e3e;
+    background-color: black;
+    color: #ffffff;
     /* color: white; */
     text-align: left;
 }
@@ -69,11 +71,12 @@
     cursor: pointer;
     font-size: 14px;
     /* background-color: #252323; */
-        background-color: #288CD5;
+    background-color: #288CD5;
 
     color: white;
     transition: background-color 0.2s ease;
 }
+
 /* 
 .second-container-one button:hover {
     background-color: #3e3e3e;

@@ -79,6 +79,35 @@ input[type="password"]:focus {
     border-color: #252323;
 } 
 
+.password-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  width: 95%;
+  /* margin-left: -10px; */
+  max-width: 400px;
+  background-color: white;
+}
+
+.password-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  margin-left: -10px;
+  background: transparent;
+}
+
+.password-input svg {
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+}
+
+
 input[type="submit"] {
     width: 100%;
     padding: 10px;

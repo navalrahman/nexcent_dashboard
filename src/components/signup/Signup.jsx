@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import toast from 'react-hot-toast'
 import { Link, useNavigate } from 'react-router-dom'
 
 const Signup = () => {
@@ -8,7 +9,7 @@ const Signup = () => {
     email: '',
     password: ''
   })
-  
+
 
   const navigate = useNavigate()
 
@@ -19,7 +20,7 @@ const Signup = () => {
       // const response = await axios.post('http://localhost:9000/api/user/signup', data)
       const response = await axios.post('https://nexcent-backend-4vbo.onrender.com/api/user/signup', data)
       console.log(response);
-      alert(response.data.status)
+      toast.success(response.data.status, { position: "top-right" })
       setTimeout(() => {
         navigate('/login')
       }, 2000)
@@ -27,7 +28,7 @@ const Signup = () => {
     } catch (error) {
       console.log('error', error);
 
-      alert(error.response.data.message)
+      toast.error(error.response.data.message, { position: "top-left" })
     }
   }
 
@@ -75,11 +76,12 @@ const Signup = () => {
 
             <div>
               {/* <label htmlFor="">Password</label> */}
-              <input type="submit" value='login' />
+              <input type="submit" value='Sign up' />
             </div>
 
-            <div>
-              <Link to='/login'>Already have account<br />login here</Link>
+            <div  style={{display:'flex',alignItems:'center', gap:'5px'}}>
+              <p>Already have account? </p>
+              <Link style={{textDecoration:'none'}} to='/login'>login here</Link>
             </div>
           </form>
         </div>

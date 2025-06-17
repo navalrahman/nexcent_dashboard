@@ -19,12 +19,15 @@ const Router = () => {
 
    const navigate = useNavigate()
 
+   
   const token = localStorage.getItem('token')
   useEffect(() => {
     if(!token){
       navigate('/login')
     }
   },[])
+
+  
   return (
     <div>
       <Routes>
