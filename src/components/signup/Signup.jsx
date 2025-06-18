@@ -29,6 +29,11 @@ const Signup = () => {
       console.log('error', error);
 
       toast.error(error.response.data.message, { position: "top-left" })
+      setData({
+        name:'',
+        email:'',
+        password:''
+      })
     }
   }
 

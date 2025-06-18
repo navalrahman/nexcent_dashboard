@@ -123,7 +123,6 @@ input[type="submit"]:hover {
     background-color: #3c3c3c;
 }
 
-
 input[type="submit"]:disabled {
   background-color: #ccc;
   color: #666;
@@ -131,8 +130,6 @@ input[type="submit"]:disabled {
   opacity: 0.7;
 }
 
-
-/* Medium devices - stack layout and center login box */
 @media (max-width: 1024px) {
     .main-container {
         flex-direction: column;
