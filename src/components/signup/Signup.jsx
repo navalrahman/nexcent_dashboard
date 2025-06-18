@@ -76,7 +76,7 @@ const Signup = () => {
 
             <div>
               {/* <label htmlFor="">Password</label> */}
-              <input type="submit" value='Sign up' />
+              <input disabled={!data.email || !data.name || !data.password} type="submit" value='Sign up' />
             </div>
 
             <div  style={{display:'flex',alignItems:'center', gap:'5px'}}>

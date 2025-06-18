@@ -3,18 +3,19 @@
     padding: 0;
     height: 100%;
 } */
-.main-container{
+
+
+.main-container {
     display: flex;
     flex-direction: row;
     position: absolute;
     top: 0;
     bottom: 0;
-    width:  99.8%;
-    /* border: 1px solid red; */
+    width: 99.8%;
     background-color: #f4f4f4;
 }
 
-.image-container{
+.image-container {
     width: 50%;
     background-image: url("./images.png");
     background-repeat: no-repeat;
@@ -22,9 +23,8 @@
 
 }
 
-.login-container{
+.login-container {
     width: 50%;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
     width: 100%;
 }
 
-.login-container-form h1{
+.login-container-form h1 {
     text-align: center;
     margin: 0;
 }
@@ -77,34 +77,33 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #252323;
-} 
+}
 
 .password-input {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0 10px;
-  width: 95%;
-  /* margin-left: -10px; */
-  max-width: 400px;
-  background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+    width: 95%;
+    max-width: 400px;
+    background-color: white;
 }
 
 .password-input input {
-  flex: 1;
-  border: none;
-  padding: 10px;
-  font-size: 14px;
-  outline: none;
-  margin-left: -10px;
-  background: transparent;
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    margin-left: -10px;
+    background: transparent;
 }
 
 .password-input svg {
-  cursor: pointer;
-  color: #666;
-  font-size: 18px;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
 }
 
 
@@ -124,8 +123,61 @@ input[type="submit"]:hover {
     background-color: #3c3c3c;
 }
 
-@media screen and (max-width: 768px) {
+
+input[type="submit"]:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+/* Medium devices - stack layout and center login box */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .login-container {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
     .login-container-one {
-        width: 80%;
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Small devices - hide image or stack better */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .login-container {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+
+    .login-container-one {
+        width: 100%;
+        max-width: 350px;
     }
 }
