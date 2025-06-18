@@ -36,6 +36,10 @@ const Login = () => {
       console.log('error', error);
 
       toast.error(error.response.data.message, { position: "top-right" })
+       setData({
+        email: '',
+        password: ''
+      })
     }
 
   }
@@ -95,7 +99,7 @@ const Login = () => {
 
 
             <div>
-              <input type="submit" value='login' />
+              <input disabled={!data.email || !data.password} type="submit" value='login' />
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
